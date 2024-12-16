@@ -28,7 +28,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    text-align: center;
     backdrop-filter: blur(10px);
     /* Subtle background blur for depth */
 }
@@ -49,8 +48,22 @@ header h1 {
     margin-bottom: 30px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns the input and button */
+    justify-content: space-between;
+    /* Ensures space between the input and button */
+    gap: 10px;
+    /* Adds consistent spacing between the input and button */
+    width: 100%;
+    /* Ensures the form stretches across the full width */
+}
+
+/* User Input Styling */
 #user-input {
-    width: 80%;
+    flex-grow: 1;
+    /* Allows input field to expand */
     padding: 12px;
     font-size: 16px;
     border: 2px solid #00909e;
@@ -58,11 +71,37 @@ header h1 {
     background-color: #f0f8ff;
     color: #272044;
     outline: none;
-    margin-bottom: 15px;
     transition: all 0.3s ease;
+    min-width: 0;
+    /* Ensures it doesn't get too wide in flexbox layout */
 }
 
+/* Focus Effect on User Input */
 #user-input:focus {
     border-color: #2a5298;
     box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+}
+
+/* Submit Button Styling */
+#submit-btn {
+    padding: 12px 24px;
+    background-color: #00909e;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button Hover Effect */
+#submit-btn:hover {
+    background-color: #007f8d;
+    transform: translateY(-2px);
+}
+
+/* Submit Button Active Effect */
+#submit-btn:active {
+    transform: translateY(2px);
 }
