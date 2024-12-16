@@ -43,3 +43,26 @@ header h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 }
+
+/* Input Field Styles */
+#form-section {
+    margin-bottom: 30px;
+}
+
+#user-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00909e;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    color: #272044;
+    outline: none;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+}
