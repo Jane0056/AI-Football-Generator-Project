@@ -24,14 +24,16 @@ body {
     width: 100%;
     max-width: 900px;
     background-color: rgba(255, 255, 255, 0.9);
-    /* Slight transparency for a modern touch */
+    /* Slight transparency for modern touch */
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 30px;
     backdrop-filter: blur(10px);
     /* Subtle background blur for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 /* Header styles */
 header h1 {
@@ -52,19 +54,13 @@ header h1 {
 form {
     display: flex;
     align-items: center;
-    /* Vertically aligns the input and button */
     justify-content: space-between;
-    /* Ensures space between the input and button */
     gap: 10px;
-    /* Adds consistent spacing between the input and button */
     width: 100%;
-    /* Ensures the form stretches across the full width */
 }
 
-/* User Input Styling */
 #user-input {
     flex-grow: 1;
-    /* Allows input field to expand */
     padding: 12px;
     font-size: 16px;
     border: 2px solid #00909e;
@@ -74,7 +70,6 @@ form {
     outline: none;
     transition: all 0.3s ease;
     min-width: 0;
-    /* Ensures it doesn't get too wide in flexbox layout */
 }
 
 /* Focus Effect on User Input */
@@ -95,6 +90,7 @@ form {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 
 /* Submit Button Hover Effect */
 #submit-btn:hover {
@@ -123,8 +119,9 @@ form {
     justify-content: center;
     align-items: center;
     font-style: italic;
-
 }
+
+
 
 /* Footer Styles */
 footer {
@@ -145,4 +142,55 @@ footer a:hover {
 
 footer a:active {
     color: #2a5298;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    #user-input {
+        width: 70%;
+    }
+
+    #submit-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #user-input {
+        width: 75%;
+        font-size: 14px;
+    }
+
+    #submit-btn {
+        font-size: 14px;
+    }
+
+    #output {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 30px;
+    }
 }
