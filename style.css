@@ -67,7 +67,7 @@ header h1 {
     font-weight: 700;
     text-align: center;
     color: #1d1b41;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Input Field Styles */
@@ -93,8 +93,8 @@ form {
     color: #272044;
     outline: none;
     transition: all 0.3s ease;
+    width: 100%;
     max-width: 800px;
-    min-width: 400px;
 }
 
 
@@ -114,7 +114,7 @@ form {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    height: auto;
+    outline: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -137,13 +137,10 @@ form {
     padding: 20px;
     border-radius: 8px;
     line-height: 1.6;
-    border-left: 2px solid #1d1b41;
+    border-left: 4px solid #1d1b41;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #272044;
     min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-style: italic;
 }
 
@@ -215,12 +212,11 @@ footer a:active {
     }
 
     #user-input {
-        width: 75%;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #submit-btn {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #output {
