@@ -240,6 +240,12 @@ button {
     font-style: italic;
 }
 
+.hint:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+    transform: translateY(-3px);
+}
+
 /* Footer styles */
 footer {
     margin-top: 30px;
@@ -261,6 +267,7 @@ footer a:hover {
 
 footer a:active {
     color: #2a5298;
+
 }
 
 
@@ -354,7 +361,6 @@ footer a:active {
     #submit-btn {
         font-size: 16px;
         padding: 14px;
-        padding: 20px;
     }
 
     #output {
