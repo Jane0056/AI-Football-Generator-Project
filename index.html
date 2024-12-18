@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Football Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,31 +14,39 @@
         <header>
             <div class="logo">
                 <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/153/original/8617222.gif?1733445567"
-                    class="responsive" alt="Football Logo">
+                    alt="Football Logo">
                 <h1>AI Football Fact Generator</h1>
             </div>
+            <h3>Welcome to the Ultimate Football Adventure ⚽</h3>
+            <br>
+            <p class="subtitle">Unleash your passion for football! Ask your burning questions, explore legendary
+                moments, and uncover thrilling insights.
+            </p>
         </header>
 
         <!-- Form for input instructions -->
-        <section id="form-section">
-            <form id="input-form">
-                <input type="text" id="user-input" placeholder="Ask anything about football..." autofocus required
+        <div class="form-section">
+            <form id="football-generator">
+                <input type="text" id="user-input" autofocus class="user-input" required
+                    placeholder="What's on your mind? Ask about players, teams, history, and more!"
                     autocomplete="off" />
-                <button type="submit" id="submit-btn">Generate</button>
+                <button type="submit" value="Generate Football" class="submit-btn" id="submit-btn">Generate</button>
             </form>
-        </section>
+            <div class="hint">e.g., "Who is the top scorer in World Cup history?" or "Which player has won the most
+                Ballon d'Or awards?"</div>
+        </div>
 
         <!-- AI Response Area -->
-        <div id="output">
-            Football, a game in which two teams of 11 players, using any part of their bodies except their hands and
-            arms, try to maneuver the ball into the opposing team’s goal.
+        <div id="output" class="output">
+            ⚽ Let the magic begin! Ask your first football question to unlock legendary stories and stats.
         </div>
 
         <footer>
-            This project was coded by <a href="https://www.chioma.de/janny/" target="_blank">Chioma Jane Agwuncha</a>.
-            It is <a href="https://github.com/Jane0056/AI-Football-Generator-Project" target="_blank">open-source on
-                GitHub</a> and is <a href="https://ai-football-generator.netlify.app/" target="_blank">hosted on
-                Netlify</a>.
+            <p>Created with ❤️ by <a href="https://www.chioma.de/janny/" target="_blank">Chioma Jane Agwuncha</a>.
+                This project is <a href="https://github.com/Jane0056/AI-Football-Generator-Project"
+                    target="_blank">open-source</a> and <a href="https://ai-football-generator.netlify.app/"
+                    target="_blank">hosted on Netlify</a>.
+            </p>
         </footer>
     </div>
 </body>
