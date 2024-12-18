@@ -326,9 +326,19 @@ footer a:active {
         padding: 30px;
     }
 
+    form {
+        flex-direction: row;
+        gap: 10px;
+    }
+
     .user-input::placeholder {
         font-size: 17px;
         color: #6c757d;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 14px 20px;
     }
 
     .output {
