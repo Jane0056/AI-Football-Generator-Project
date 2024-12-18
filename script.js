@@ -9,6 +9,7 @@ function displayFact(response) {
     autoStart: true, // Start typing immediately
     cursor: "", // Remove the cursor effect
     delay: 50, // Typing speed
+    deleteSpeed: 20, // Speed of deleting each character (smaller number = faster)
   });
 }
 
