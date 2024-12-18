@@ -134,7 +134,6 @@ form {
     transition: all 0.3s ease;
 }
 
-
 /* Submit Button Styling */
 .submit-btn {
     padding: 12px 24px;
@@ -162,21 +161,22 @@ form {
     box-shadow: none;
 }
 
-
-/* Output Area */
+/* Output section */
 .output {
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     margin-top: 20px;
     padding: 20px;
-    border-radius: 8px;
-    line-height: 1.6;
-    border-left: 4px solid #1d1b41;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    line-height: 1.8;
+    border-left: 5px solid #1d1b41;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     color: #272044;
-    min-height: 100px;
     font-style: italic;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
+
 
 .hint {
     line-height: 1.5;
