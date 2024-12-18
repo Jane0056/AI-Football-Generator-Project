@@ -122,27 +122,29 @@ header h3:hover {
     width: 100%;
 }
 
-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+.form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 15px 40px rgba(65, 50, 100, 0.1);
+    border-radius: 12px;
     width: 100%;
 }
 
-.user-input {
-    flex-grow: 1;
-    padding: 12px 24px;
-    font-size: 16px;
-    border: 2px solid #1d1b41;
+input,
+button {
+    padding: 12px 18px;
     border-radius: 8px;
-    background-color: #f0f8ff;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Input field */
+.user-input {
+    width: 80%;
+    background-color: #f9f9f9;
     color: #272044;
-    font-weight: 400;
-    line-height: 1.6;
-    outline: none;
-    transition: all 0.3s ease;
-    width: 100%;
+    border: 2px solid #1d1b41;
 }
 
 
@@ -164,16 +166,10 @@ form {
 
 /* Submit Button Styling */
 .submit-btn {
-    padding: 12px 24px;
     background: linear-gradient(135deg, #1e3c72, #2a5298, #00909e);
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    border: none;
     cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
 /* Submit Button Hover Effect */
