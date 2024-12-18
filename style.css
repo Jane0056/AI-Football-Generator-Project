@@ -161,6 +161,10 @@ form {
     box-shadow: none;
 }
 
+.submit-btn:disabled {
+    opacity: 0.5;
+}
+
 /* Output section */
 .output {
     font-size: 18px;
@@ -173,12 +177,29 @@ form {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     color: #272044;
     font-style: italic;
-    text-align: center;
     transition: background-color 0.3s ease;
 }
 
 .output:hover {
     background-color: #f7f9fc;
+}
+
+.output strong {
+    color: #272044;
+}
+
+.hidden {
+    display: none;
+}
+
+.waiting {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 .hint {
