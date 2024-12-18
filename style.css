@@ -270,7 +270,6 @@ footer a:active {
     }
 }
 
-
 /* Tablets and medium devices */
 @media screen and (max-width: 768px) {
     .container {
@@ -319,7 +318,39 @@ footer a:active {
         font-size: 32px;
     }
 
+    header h3 {
+        font-size: 24px;
+    }
+
     .container {
         padding: 30px;
+        max-width: 900px;
+    }
+
+    form {
+        flex-direction: row;
+        /* Keep input and button side-by-side */
+        gap: 10px;
+    }
+
+    .user-input {
+        flex-grow: 1;
+        font-size: 18px;
+        padding: 16px 24px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+
+    .user-input::placeholder {
+        font-size: 17px;
+        color: #6c757d;
+    }
+
+    .output {
+        font-size: 18px;
+        padding: 20px;
     }
 }
