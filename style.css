@@ -125,6 +125,15 @@ form {
     transform: scale(1.02);
 }
 
+/* General placeholder styling */
+.user-input::placeholder {
+    color: #6c757d;
+    font-size: 16px;
+    font-style: italic;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
 
 /* Submit Button Styling */
 .submit-btn {
@@ -142,14 +151,17 @@ form {
 
 /* Submit Button Hover Effect */
 .submit-btn:hover {
-    background-color: #007f8d;
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #005f6b, #1d1b41);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Submit Button Active Effect */
 .submit-btn:active {
     transform: translateY(2px);
+    box-shadow: none;
 }
+
 
 /* Output Area */
 .output {
