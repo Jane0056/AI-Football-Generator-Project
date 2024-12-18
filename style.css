@@ -322,5 +322,17 @@ footer a:active {
         font-size: 24px;
     }
 
+    .container {
+        padding: 30px;
+    }
 
+    .user-input::placeholder {
+        font-size: 17px;
+        color: #6c757d;
+    }
+
+    .output {
+        font-size: 18px;
+        padding: 20px;
+    }
 }
