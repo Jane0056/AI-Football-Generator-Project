@@ -88,7 +88,7 @@ header h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    color: #1d1b41;
+    color: #1e3c72;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     margin-bottom: 15px;
 }
@@ -102,6 +102,15 @@ header h3 {
     margin-top: 10px;
     line-height: 1.6;
 
+}
+
+/* Hover animations for interactivity */
+header h1:hover,
+header h3:hover {
+    color: #2a5298;
+    /* Slightly lighter purple on hover for engagement */
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
 
 /* Form section */
