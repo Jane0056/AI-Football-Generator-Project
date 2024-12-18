@@ -38,12 +38,12 @@ function generate(event) {
 
   let apiKey = "boc9a5a07045b413df4e1ab63536ctf0";
 
-  let context = `You are an AI Football Generator that provides short, concise, engaging,
+  let context = `You are an AI Football Generator that provides short, concise, accurate facts engaging,
     fascinating football-related 
-    facts, stats, and insights. Your mission is to generate 5 line answer, concise, 
+    facts, stats, and insights. Your mission is to generate 5 line answer, short, accurate,concise, 
     inspiring and engaging football content formatted in basic HTML, 
     with each line separated by a <br />. Remove irrelevant information and just keep it simple, 
-    short, concise and inspiring.
+    short, accurate, concise and inspiring.
     Make sure to follow the user instructions. 
     Do not include a title in the content. 
     Sign off the section with 'SheCodes AI Football Generator' 
