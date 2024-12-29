@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 10px;
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    padding: 40px;
+    padding: 20px;
     backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
@@ -36,14 +36,6 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     position: relative;
-}
-
-/* Hover Effect */
-.container:hover {
-    transform: translate(0, -10px);
-    /* Moves the container slightly upward */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* Increase shadow for a floating effect */
 }
 
 /* Header styles */
